@@ -20,9 +20,9 @@ public class Produzentin {
 
     @GetMapping("/sleep/{secs}")
     public ResponseEntity<String> demo(@PathVariable("secs") Integer secs) {
-        log.info("Thread to sleep for {} seconds", secs);
         try {
             Thread.sleep(Duration.ofSeconds(secs));
+            log.info("Thread Name: {}",Thread.currentThread());
         } catch (InterruptedException e) {
             String message = ExceptionUtils.getRootCauseMessage(e);
             log.error("InterruptedException with details {}", message);
