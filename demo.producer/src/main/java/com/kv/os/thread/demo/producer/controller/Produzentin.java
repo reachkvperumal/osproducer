@@ -20,7 +20,6 @@ public class Produzentin {
 
     @GetMapping("/sleep/{secs}")
     public ResponseEntity<String> demo(@PathVariable("secs") Integer secs) {
-        System.out.println("Inside...");
         log.info("Thread to sleep for {} seconds", secs);
         try {
             Thread.sleep(Duration.ofSeconds(secs));
