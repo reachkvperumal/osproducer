@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: producer-with-os-thread
+
+server:
+  port: 8081
+  tomcat:
+    threads:
+      max: 10
+  servlet:
+    context-path: /producer
