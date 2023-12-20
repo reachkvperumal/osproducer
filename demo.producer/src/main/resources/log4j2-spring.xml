@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN" monitorInterval="30">
-
+<Configuration>
     <Properties>
         <Property name="LOG_PATTERN">
             %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} - [%t] ${spring:spring.application.name} %-5level - %highlight{%m%n%ex}{FATAL=bg_red, ERROR=red, WARN=yellow, INFO=green}
